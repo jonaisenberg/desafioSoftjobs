@@ -33,7 +33,6 @@ const Login = () => {
         navigate('/perfil')
       })
       .catch(({ response: { data } }) => {
-        console.log(data)
         console.error(data)
         window.alert(`${data.message} 🙁.`)
       })

@@ -35,7 +35,7 @@ const registrarUsuario = async (usuario) => {
 }
 
 const verificarCredenciales = async (email, password) => {
-    const values = [email];
+    const values = [email]
     const consulta = "SELECT * FROM usuarios WHERE email = $1"
     const { rows: [usuario], rowCount } = await pool.query(consulta, values)
 
